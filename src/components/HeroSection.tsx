@@ -12,15 +12,15 @@ const HeroSection = () => {
     'https://www.linkedin.com/company/cacau-show/',
   ]
   return (
-    <div className="w-full h-screen text-white text-center bg-circle-gradient from-blue-400 to-blue-800 flex items-center justify-center">
-      <div className="flex flex-col w-fit h-fit absolute">
-        <p className="w-[351.38px] md:w-fit text-start text-lg md:text-2xl font-bold text-white/80 mx-auto md:mr-0 md:ml-2 mb-2">
+    <section className="section w-full h-screen flex items-center justify-center text-white text-center bg-circle-gradient from-blue-400 to-blue-800 ">
+      <div className="flex flex-col w-fit h-fit">
+        <p className="w-[351.38px] md:w-fit text-start text-lg md:text-2xl font-bold text-white/80 mx-auto md:mr-0 md:ml-2 mb-2 relative top-[2rem] md:top-[3rem]">
           OI 👋 EU SOU O{' '}
           <a href={links[0]} target="_blank">
             @LUIS
           </a>
         </p>
-        <div className="flex gap-[6px] md:gap-3 w-fit h-fit absolute right-[2rem] md:right-[2.2rem] top-[-0.5rem] md:top-[-1.2rem]">
+        <div className="flex gap-[6px] md:gap-3 w-fit h-fit relative top-[-0.75rem] md:top-[-0.5rem] left-[13.5rem] md:left-[31rem]">
           {icons.map((icon, i) => (
             <a
               href={i <= 1 ? links[i] : '/CV-LUIS-FELIPE.pdf'}
@@ -51,7 +51,7 @@ const HeroSection = () => {
           com 5 anos de experiência
         </p>
       </div>
-    </div>
+    </section>
   )
 }
 

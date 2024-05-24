@@ -9,7 +9,7 @@ const DemonstrationSection = () => {
   return (
     <>
       <div className="w-full h-[20px] bg-[#3B65B0]/10 backdrop-blur-3xl  mt-[-10px] mb-[-10px]" />
-      <div className="h-fit xl:h-screen bg-gradient-to-b from-[#3B65B0] to-purple-100  px-4 py-8 flex flex-col xl:flex-row w-full gap-[5rem] xl:gap-[14rem] items-center justify-center">
+      <section className="section h-fit xl:h-screen bg-gradient-to-b from-[#3B65B0] to-purple-100  px-4 py-8 flex flex-col xl:flex-row w-full gap-[5rem] xl:gap-[14rem] items-center justify-center">
         <div className="flex flex-col w-full max-w-[450px]">
           <div className="w-full flex justify-center gap-4 mt-10 xl:mt-0">
             <h4 className="text-white/80 uppercase font-semibold text-lg w-fit">
@@ -70,7 +70,7 @@ const DemonstrationSection = () => {
             Seu portal de noticias sobre telecom e evolução da web.
           </p>
         </div>
-      </div>
+      </section>
     </>
   )
 }

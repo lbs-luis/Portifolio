@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    180deg,
+    rgba(28, 46, 112, 1) 0%,
+    rgba(96, 165, 250, 1) 25%,
+    rgba(59, 101, 176, 1) 50%,
+    rgba(184, 169, 245, 1) 75%,
+    rgba(253, 186, 116, 1) 100%
+  );
+  position: absolute;
+  left: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8);
+}

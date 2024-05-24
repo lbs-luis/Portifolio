@@ -7,6 +7,15 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    keyframes: {
+      'scale-up-down': {
+        '0%, 100%': { transform: 'scale(1)' },
+        '50%': { transform: 'scale(1.05)' },
+      },
+    },
+    animation: {
+      'scale-up-down': 'scale-up-down 2s infinite', // 2s é a duração, você pode ajustar conforme necessário
+    },
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
