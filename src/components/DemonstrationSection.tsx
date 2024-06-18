@@ -8,8 +8,11 @@ const DemonstrationSection = () => {
   return (
     <>
       <section className="w-full h-fit xl:h-screen px-4 py-8 flex flex-col xl:flex-row xl:gap-[14rem] items-center justify-center">
-        {projects.map((project) => (
-          <div className="flex flex-col w-full max-w-[450px] mt-32 xl:mt-0">
+        {projects.map((project, i) => (
+          <div
+            className="flex flex-col w-full max-w-[450px] mt-32 xl:mt-0"
+            key={i}
+          >
             <div className="w-full flex justify-center gap-4">
               <h4 className="text-white/80 uppercase font-semibold text-lg w-fit">
                 {project.Title}
