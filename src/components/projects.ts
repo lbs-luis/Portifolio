@@ -1,5 +1,6 @@
 import agendar_demonstration from '/public/mockups/agendar-demonstration.png'
 import tsnet_demonstration from '/public/mockups/tsnet-desmontration.png'
+import siteMetadata from '../../siteMetaData'
 
 interface IProject {
   Title: string
@@ -10,7 +11,7 @@ interface IProject {
   GithubUrl: string
 }
 
-const baseGithubUrl = 'https://github.com/luis-lbs'
+const baseGithubUrl = siteMetadata.github
 
 const agendar_descomplicado: IProject = {
   Title: 'Agendar Descomplicado',
