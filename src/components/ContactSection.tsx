@@ -4,7 +4,7 @@ const Lottie = dynamic(() => import('lottie-react'), { ssr: false })
 import email_animation from '@/assets/email-animation.json'
 import party_animation from '@/assets/party-animation.json'
 import { useRef } from 'react'
-import copyToClipboardAndroid from '@/utils/copyToClipboardAndroid'
+import copyToClipboardAndroid from '@/lib/copyToClipboardAndroid'
 
 export default function ContactSection() {
   const emailCopyAnimation = () => {
@@ -53,7 +53,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section className="flex flex-col  w-full h-screen bg-gradient-to-b from-purple-100 to-[#fdba74] pb-[100px]  gap-[5rem] xl:gap-[14rem] items-center justify-center">
+    <section className="relative flex flex-col  w-full h-screen gap-[5rem] xl:gap-[14rem] items-center justify-center overflow-y-hidden">
       <div className="flex flex-col md:flex-row w-fit h-fit gap-8">
         <Lottie
           className="w-full max-w-[300px]"
@@ -74,7 +74,7 @@ export default function ContactSection() {
           </button>
         </div>
       </div>
-      <div className="w-full h-fit flex flex-row justify-between absolute bottom-0">
+      <div className="absolute w-full h-fit flex flex-row justify-between  bottom-0 mb-[-50px]">
         <Lottie
           lottieRef={left_party}
           className="w-full max-w-[400px] opacity-0"

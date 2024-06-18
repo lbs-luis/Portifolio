@@ -1,7 +1,8 @@
 {
-  "name": "luis-portif",
-  "version": "0.1.0",
+  "name": "lbsluis-portifolio",
+  "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@9.1.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,10 +10,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-toggle": "^1.0.3",
+    "@radix-ui/react-toggle-group": "^1.0.4",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "lottie-react": "^2.4.0",
+    "lucide-react": "^0.395.0",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
