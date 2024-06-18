@@ -7,7 +7,7 @@ const siteMetadata = {
   theme: 'light',
   siteUrl: 'https://lbsluis.vercel.app/',
   siteLogo: '/logo.png',
-  socialBanner: '/social-banner.png',
+  socialBanner: '/social-banner.jpeg',
   email: 'luis.felipe.lbs@gmail.com',
   github: 'https://github.com/luis-lbs',
   twitter: '/',
