@@ -18,7 +18,7 @@ const agendar_descomplicado: IProject = {
   MockupUrl: agendar_demonstration.src,
   MockupBlurUrl: agendar_demonstration.blurDataURL,
   GithubUrl: `${baseGithubUrl}/AgendaR`,
-  LiveUrl: '#'
+  LiveUrl: 'https://agendar-descomplicado.vercel.app/'
 }
 
 const seo_adsense_blog: IProject = {
