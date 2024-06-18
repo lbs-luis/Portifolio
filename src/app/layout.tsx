@@ -50,15 +50,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <head>
-        <meta
-          property="og:image"
-          content={`${siteMetadata.siteUrl}${siteMetadata.socialBanner}`}
-        />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="400" />
-      </head>
       <body className={`relative ${fontSans.className}`}>{children}</body>
     </html>
   )
