@@ -5,7 +5,7 @@ const siteMetadata = {
   description: '@luis FrontEnd Developer',
   language: 'pt-BR',
   theme: 'light',
-  siteUrl: 'https://lbsluis.vercel.app/',
+  siteUrl: 'https://lbsluis.vercel.app',
   siteLogo: '/logo.png',
   socialBanner: '/social-banner.jpeg',
   email: 'luis.felipe.lbs@gmail.com',
