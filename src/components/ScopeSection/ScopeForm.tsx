@@ -70,6 +70,7 @@ export const ScopeForm = () => {
           type="single"
           values={[
             { value: '3000', label: 'Institucional' },
+            { value: '2000', label: 'Blog' },
             { value: '1500', label: 'Landing page' },
           ]}
           priceHandler={priceHandler}
@@ -79,7 +80,7 @@ export const ScopeForm = () => {
           label="Possui design próprio?"
           type="single"
           values={[
-            { value: '800', label: 'não' },
+            { value: '900', label: 'não' },
             { value: '0', label: 'sim' },
           ]}
           priceHandler={priceHandler}
@@ -90,7 +91,7 @@ export const ScopeForm = () => {
           type="single"
           values={[
             { value: '0', label: 'não' },
-            { value: '650', label: 'sim' },
+            { value: '850', label: 'sim' },
           ]}
           priceHandler={priceHandler}
           id={2}
