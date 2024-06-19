@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter as FontSans } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import './globals.css'
 import siteMetadata from '../../siteMetaData'
 
-const fontSans = FontSans({
+const roboto = Roboto({
   subsets: ['latin'],
-  variable: '--font-sans',
+  weight: ['100', '300', '400', '500', '700', '900'],
 })
 
 export const metadata: Metadata = {
@@ -50,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`relative ${fontSans.className}`}>{children}</body>
+      <body className={`relative ${roboto.className}`}>{children}</body>
     </html>
   )
 }
