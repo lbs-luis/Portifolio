@@ -9,7 +9,7 @@ export default function Home() {
       <HeroSection />
       <div className="w-full h-fit flex flex-col relative bg-body-gradient">
         <DemonstrationSection />
-        <ScopeSection />
+        {/* <ScopeSection /> */}
         <ContactSection />
       </div>
     </main>
