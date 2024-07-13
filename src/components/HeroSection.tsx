@@ -7,8 +7,8 @@ import document_icon from '/public/icons/document-icon.svg'
 const HeroSection = () => {
   const icons = [linkedin_logo, github_logo, document_icon]
   const links = [
-    'https://www.linkedin.com/in/luisfelipelbs/',
-    'https://github.com/luis-lbs',
+    'https://www.linkedin.com/in/lbs-luis',
+    'https://github.com/lbs-luis',
     'https://www.linkedin.com/company/cacau-show/',
   ]
   return (
@@ -22,12 +22,7 @@ const HeroSection = () => {
         </p>
         <div className="flex gap-[6px] md:gap-3 w-fit h-fit relative top-[-0.75rem] md:top-[-0.5rem] left-[13.5rem] md:left-[31rem]">
           {icons.map((icon, i) => (
-            <a
-              href={i <= 1 ? links[i] : '/CV-LUIS-FELIPE.pdf'}
-              download
-              target="_blank"
-              key={`icon_${i}`}
-            >
+            <a href={process.env.CV_URL} target="_blank" key={`icon_${i}`}>
               <Image
                 className="hover:scale-110 transition-transform duration-200 cursor-pointer  w-[32px] h-[32px] md:w-full md:h-full"
                 src={icon.src}
