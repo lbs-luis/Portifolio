@@ -9,8 +9,9 @@ const HeroSection = () => {
   const links = [
     'https://www.linkedin.com/in/lbs-luis',
     'https://github.com/lbs-luis',
-    'https://www.linkedin.com/company/cacau-show/',
+    process.env.CV_URL,
   ]
+  const cacauShowLinkedInUrl = 'https://www.linkedin.com/company/cacau-show/'
   return (
     <section className="section w-full h-screen flex items-center justify-center text-white text-center bg-circle-gradient from-blue-400 to-blue-800 ">
       <div className="flex flex-col w-fit h-fit">
@@ -22,7 +23,7 @@ const HeroSection = () => {
         </p>
         <div className="flex gap-[6px] md:gap-3 w-fit h-fit relative top-[-0.75rem] md:top-[-0.5rem] left-[13.5rem] md:left-[31rem]">
           {icons.map((icon, i) => (
-            <a href={process.env.CV_URL} target="_blank" key={`icon_${i}`}>
+            <a href={links[i]} target="_blank" key={`icon_${i}`}>
               <Image
                 className="hover:scale-110 transition-transform duration-200 cursor-pointer  w-[32px] h-[32px] md:w-full md:h-full"
                 src={icon.src}
@@ -40,7 +41,7 @@ const HeroSection = () => {
         </h1>
         <p className="w-[351.38px] md:w-fit text-end self-end text-lg md:text-2xl font-bold text-white/80 md:mr-2 mt-2 uppercase">
           na{' '}
-          <a href={links[2]} target="_blank">
+          <a href={cacauShowLinkedInUrl} target="_blank">
             @CACAU-SHOW
           </a>{' '}
           com 5 anos de experiência
