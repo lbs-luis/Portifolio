@@ -8,7 +8,7 @@ export default function Home() {
     <main className="flex flex-col w-full">
       <HeroSection />
       <div className="w-full h-fit flex flex-col relative bg-body-gradient">
-        <DemonstrationSection />
+        {/* <DemonstrationSection /> */}
         {/* <ScopeSection /> */}
         <ContactSection />
       </div>
